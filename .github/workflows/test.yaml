@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+name: Build and test app
+jobs:
+  deploy:
+    name: Build and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v5
+        with:
+          maven-version: 3.8.2
+      - name: Build and test
+        run: |
+          mvn package
