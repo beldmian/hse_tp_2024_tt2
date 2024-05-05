@@ -1,5 +1,7 @@
 # Техническое задание 2
 
+![](https://github.com/beldmian/hse_tp_2024_tt2/actions/workflows/test.yaml/badge.svg)
+
 ## Сборка
 Для сборки проекта с проведением тестирования используется команда:
 ```bash
